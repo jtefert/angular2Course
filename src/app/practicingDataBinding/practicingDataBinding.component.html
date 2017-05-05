@@ -1,0 +1,11 @@
+<label>
+  Name
+</label>
+<input [(ngModel)]="userName" (ngModelChange)="updateButtonEnableState()"/>
+<button class="btn btn-default"
+[disabled]="!resetButtonEnabled"
+(click)="resetUserName()">
+reset</button>
+<p>
+  Value of the userName is: {{userName}}, length is {{userName.length}}
+</p>

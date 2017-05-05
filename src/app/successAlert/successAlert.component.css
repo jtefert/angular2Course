@@ -1,0 +1,6 @@
+.success-message{
+  border-width : 3px;
+  border-style: solid;
+  border-color: rgb(0,125,125);
+  padding: 5px;
+}
