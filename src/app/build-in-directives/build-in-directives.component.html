@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row" style="height:100px;">
+    <label>Some content that may be hidden:</label>
+    <p [innerText]="secret" *ngIf="showSecret">
+    </p>
+  </div>
+  <div class="row">
+    <button (click)="buttonWasClicked()">Display Details</button>
+  </div>
+  <hr />
+  <div class="row">
+    <label>Button-Click-Log:</label>
+    <p *ngFor="let logItem of buttonClicksLog; let i = index" [ngStyle]="{backgroundColor: getBackgroundColor(i)}" [ngClass]="{'whiteColor': getColor(i)}">
+      {{i}} : {{buttonClicksLog[i]}}
+    </p>
+  </div>
+</div>

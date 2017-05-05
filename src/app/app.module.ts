@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { SuccessAlertComponent } from './successAlert/successAlert.component';
 import { ErrorAlertComponent } from './errorAlert/errorAlert.component';
 import { PracticingDataBindingComponent } from './practicingDataBinding/practicingDataBinding.component';
+import { BuildInDirectivesComponent } from './build-in-directives/build-in-directives.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SuccessAlertComponent,
     ErrorAlertComponent,
-    PracticingDataBindingComponent
+    PracticingDataBindingComponent,
+    BuildInDirectivesComponent
   ],
   imports: [
     BrowserModule,
